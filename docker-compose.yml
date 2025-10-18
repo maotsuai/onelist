@@ -3,7 +3,7 @@ services:
   onelist:
     restart: always
     container_name: onelist
-    image: 'msterzhang/onelist:latest'
+    image: 'maotsuai/onelist:latest'
     volumes:
       - '/root/onelist/config:/config'
     ports:
@@ -13,9 +13,15 @@ services:
       - PGID=0
       - TZ=Asia/Shanghai
     extra_hosts:
-      - 'api.themoviedb.org:13.224.161.90'
-      - 'api.themoviedb.org:13.35.67.86'
-      - 'api.themoviedb.org:13.249.175.212'
-      - 'api.themoviedb.org:13.35.161.120'
-      - 'image.themoviedb.org:104.16.61.155'
-      - 'www.themoviedb.org:54.192.151.79'
+      - 'api.themoviedb.org:108.156.46.87'
+      - 'api.themoviedb.org:108.156.46.80'
+      - 'api.themoviedb.org:108.156.46.56'
+      - 'api.themoviedb.org:108.156.46.129'
+      - 'image.tmdb.org:108.138.233.53'
+      - 'image.tmdb.org:108.138.233.12'
+      - 'image.tmdb.org:108.138.233.46'
+      - 'image.tmdb.org:108.138.233.88'
+      - 'www.themoviedb.org:108.157.78.18'
+      - 'www.themoviedb.org:108.157.78.94'
+      - 'www.themoviedb.org:108.157.78.103'
+      - 'www.themoviedb.org:108.157.78.116'
